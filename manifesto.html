@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <link rel="stylesheet" href="css/style.css">
+
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;600;700&display=swap" rel="stylesheet">
+    
+
+    <title>Manifesto</title>
+</head>
+<body>
+    <ul id='menu'>
+        <li><a href="history.html">History</a></li>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="manifesto.html">Manifesto</a></li>
+    </ul>
+
+    <div class="center">
+        <h1>Manifesto</h1>
+    </div>
+
+    <div class="main"> 
+    
+        <button class="accordion">Люди и взаимодействие важнее процессов и инструментов.</button>
+        <div class="panel">
+            <p>Принцип: "Люди и взаимодействие важнее процессов и инструментов" говорит о том, что выстраивая процесс разработки чего угодно, важно помнить о том, для чего это делается, для кого и с какой целью.</p>
+        </div>
+
+        <button class="accordion">Работающий продукт важнее исчерпывающей документации.</button>
+        <div class="panel">
+            <p>Данный принцип говорит о том, что работающий вовремя продукт, важнее идеально написанного кода.</p>
+        </div>
+
+        <button class="accordion">Сотрудничество с заказчиком важнее согласования условий контракта.</button>
+        <div class="panel">
+            <p>Вышеуказанный принцип говорит о том, что контракт важен, но взвешивая условия контракта и сотрудничество, правильные долгосрочные партнерские отношения, то отношения будут важнее.</p>
+        </div>
+
+        <button class="accordion">Готовность к изменениям важнее следования плану.</button>
+        <div class="panel">
+            <p>Данный принцип говорит о том, что план важен, но еще более важно быть готовым его изменить, если в какой то момент мы поняли, что этот план больше не работает в текущих условиях.</p>
+        </div>
+    </div>
+    <script>
+        var acc = document.getElementsByClassName("accordion");
+        var i;
+
+        for (i = 0; i < acc.length; i++) {
+        acc[i].addEventListener("click", function() {
+            this.classList.toggle("active");
+            var panel = this.nextElementSibling;
+            if (panel.style.display === "block") {
+            panel.style.display = "none";
+            } else {
+            panel.style.display = "block";
+            }
+        });
+        }
+    </script>
+    
+</body>
+</html>
