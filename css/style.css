@@ -73,3 +73,23 @@ li a:hover:not(.active) {
   margin: 0 auto;
   font-family: "Anton", sans-serif;
 }
+
+table {
+  font-family: arial, sans-serif;
+  border-collapse: collapse;
+  width: 100%;
+}
+td,
+th {
+  border: 1px solid #dddddd;
+  text-align: center;
+  padding: 5px;
+}
+
+tr:nth-child(even) {
+  background-color: #dddddd;
+}
+.tableDiv {
+  width: 70%;
+  margin: 1rem auto;
+}
