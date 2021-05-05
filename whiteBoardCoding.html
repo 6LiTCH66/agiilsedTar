@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;600;700&display=swap" rel="stylesheet">
+
+    <title>Code</title>
+</head>
+<body>
+    <ul id='menu'>
+        <li><a href="history.html">History</a></li>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="manifesto.html">Manifesto</a></li>
+        <li><a href="scrum.html">Scrum</a></li>
+        <li><a href="riskManagement.html">Risk Management</a></li>
+        <li><a href="whiteBoardCoding.html">White Board Coding</a></li>
+    </ul>
+    <div class="code">
+        <ol>
+            <li>
+                <div>
+                    How do you reverse a given string in place without using a loop only?
+                </div>
+                <div class="string">
+                    Input:
+                    <br>
+                    str = "Ilja Holmogortsev"
+                    <br>
+                    print("".join(reversed(str)))
+                </div>
+            </li>
+            <li>
+                <div>
+                    How do you check if a given string is a palindrome?
+                </div>
+                <div class="string">
+                    s = "Taco cat"
+                    <br>
+                    string = s.lower().replace(" ", "")
+                    <br>
+                    if string == string[::-1]:
+                    <br>
+                        print("Is palindrome")
+                        <br>
+                    else:
+                        print("Not palindrome")
+                </div>
+            </li>
+            <li>
+                <div>
+                    Write a program to display the multiplication table of a given integer.
+                </div>
+                <div class="string">
+                    intNum = input()
+                    <br>
+                    for i in range(1, int(intNum) + 1):
+                    <br>
+                        print(intNum, " * ", i, " = ", int(intNum) * i)
+                </div>
+            </li>
+            <li>
+                <div>
+                    Write a program to find the maximum and minimum element in an array.
+                </div>
+                <div class="string">
+                    array = [1, 3, 44, 99, -1]
+                    <br>
+                    print(max(array))
+                    <br>
+                    print(min(array))
+                </div>
+            </li>
+            <li>
+                <div>
+                    Write a program to find the largest of three given (input) numbers. (e.g. 8, 6, 10 → 10)
+                </div>
+                <div class="string">
+                    num1 = input("number 1 = ")
+                    <br>
+                    num2 = input("number 2 = ")
+                    <br>
+                    num3 = input("number 3 = ")
+                    <br>
+                    if (num1 > num2) and (num1 > num3):
+                        <br>
+                        largest = num1
+                        <br>
+                    elif (num2 > num1) and (num2 > num3):
+                        <br>
+                        largest = num2
+                        <br>
+                    else:
+                    <br>
+                        largest = num3
+                    <br>
+                    print("The largest number is", largest)
+                </div>
+            </li>
+            <li>
+                <div>
+                    Write a program to calculate the sum of elements in an array. (e.g. 1234 → 1 + 2 + 3 + 4 → 10)
+                </div>
+                <div class="string">
+                    arr = [11, 2, 4, 9]
+                    <br>
+                    print(sum(arr))
+                </div>
+            </li>
+            <li>
+                <div>
+                    Write a program to output a pyramid-like pattern  with an asterisk.
+                </div>
+                <div class="string">
+                    def triangle(n):
+                    <br>
+                        k = n - 1
+                        <br>
+                        for i in range(0, n):
+                        <br>
+                            for j in range(0, k):
+                            <br>
+                                print(end=" ")
+                                <br>
+                            k = k - 1
+                            <br>
+                            for j in range(0, i + 1):
+                            <br>
+                                print("* ", end="")
+                                <br>
+
+                            print("\r")
+                            <br>
+                    n = 3
+                    <br>
+                    triangle(n)
+                </div>
+            </li>
+            <li>
+                <div>
+                    Write a program to check if a given number is odd or even. Return “odd” if the number is odd, or “even” if the number is even.
+                </div>
+                <div class="stringS">
+                    num = 532
+                        <br>
+                    if num % 2 == 0:
+                    <br>
+                        print("четное")
+                        <br>
+                    else:
+                    <br>
+                        print("нечетное")
+                </div>
+            </li>
+        </ol>
+    </div>
+</body>
+</html>
